@@ -1,5 +1,7 @@
 Imports System
 
+'100% - porcentaje que descontar% = porcentaje pasar a decimal y hacer calculo *
+
 'Crear un proyecto y un módulo “Venta” para 
 'resolver con If: ingresar dos valores relacionados 
 'a un producto en venta: cantidad y precio unitario. 
@@ -13,19 +15,54 @@ Module Venta
 
     Sub Main(args As String())
 
-        Dim Unidades, PrecioUnidad As Single
+        Dim Unidades, PrecioUnidad, Subtotal, Descuento, Total As Single
 
         Console.WriteLine("Cuanto quiere llevar de Vino Tinto (unidades)?")
         Unidades = Console.ReadLine()
 
-        Console.WriteLine("Cuanto quiere llevar de Vino Tinto (unidades)?")
+        Console.WriteLine("Precio unitario (Vino Tinto):")
         PrecioUnidad = Console.ReadLine()
 
         If Unidades >= 10 And Unidades <= 50 Then
 
+            SubTotal = Unidades * PrecioUnidad
+            'Descuento de 5% // 100% - 5% = 95% => 95%/100% = 0.95
+            Descuento = (SubTotal * 5) / 100
+            Total = SubTotal - Descuento
+
+            Console.WriteLine("Subtotal: " & SubTotal)
+            Console.WriteLine("Descuento aplicado 5% ")
+            Console.WriteLine("Monto descontado: " & Descuento)
+            Console.WriteLine("Total: " & Total)
+
+        ElseIf Unidades >= 51 And Unidades <= 250 Then
 
 
+            Subtotal = Unidades * PrecioUnidad
+            'Descuento de 10% // 100% - 10% = 90% => 90%/100% = 0.90
+            Descuento = (Subtotal * 5) / 100
+            Total = Subtotal - Descuento
 
+            Console.WriteLine("Subtotal: " & Subtotal)
+            Console.WriteLine("Descuento aplicado 10% ")
+            Console.WriteLine("Monto descontado: " & Descuento)
+            Console.WriteLine("Total: " & Total)
+
+        ElseIf Unidades >= 251 Then
+
+
+            Subtotal = Unidades * PrecioUnidad
+            'Descuento de 20% // 100% - 20% = 80% => 80%/100% = 0.80
+            Descuento = (Subtotal * 5) / 100
+            Total = Subtotal - Descuento
+
+            Console.WriteLine("Subtotal: " & Subtotal)
+            Console.WriteLine("Descuento aplicado 20% ")
+            Console.WriteLine("Monto descontado: " & Descuento)
+            Console.WriteLine("Total: " & Total)
+
+        Else
+            Console.WriteLine("GRATIS")
         End If
 
 
