@@ -1,7 +1,5 @@
 Imports System
 
-'100% - porcentaje que descontar% = porcentaje pasar a decimal y hacer calculo *
-
 'Crear un proyecto y un módulo “Venta” para 
 'resolver con If: ingresar dos valores relacionados 
 'a un producto en venta: cantidad y precio unitario. 
@@ -37,7 +35,6 @@ Module Venta
 
         ElseIf Unidades >= 51 And Unidades <= 250 Then
 
-
             Subtotal = Unidades * PrecioUnidad
             'Descuento de 10% // 100% - 10% = 90% => 90%/100% = 0.90
             Descuento = (Subtotal * 10) / 100
@@ -49,7 +46,6 @@ Module Venta
             Console.WriteLine("Total: " & Total)
 
         ElseIf Unidades >= 251 Then
-
 
             Subtotal = Unidades * PrecioUnidad
             'Descuento de 20% // 100% - 20% = 80% => 80%/100% = 0.80
