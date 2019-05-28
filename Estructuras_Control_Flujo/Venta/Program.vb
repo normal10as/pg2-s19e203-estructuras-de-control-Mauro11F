@@ -27,7 +27,7 @@ Module Venta
 
             SubTotal = Unidades * PrecioUnidad
             'Descuento de 5% // 100% - 5% = 95% => 95%/100% = 0.95
-            Descuento = (SubTotal * 5) / 100
+            Descuento = (Subtotal * 5) / 100
             Total = SubTotal - Descuento
 
             Console.WriteLine("Subtotal: " & SubTotal)
@@ -40,7 +40,7 @@ Module Venta
 
             Subtotal = Unidades * PrecioUnidad
             'Descuento de 10% // 100% - 10% = 90% => 90%/100% = 0.90
-            Descuento = (Subtotal * 5) / 100
+            Descuento = (Subtotal * 10) / 100
             Total = Subtotal - Descuento
 
             Console.WriteLine("Subtotal: " & Subtotal)
@@ -53,7 +53,7 @@ Module Venta
 
             Subtotal = Unidades * PrecioUnidad
             'Descuento de 20% // 100% - 20% = 80% => 80%/100% = 0.80
-            Descuento = (Subtotal * 5) / 100
+            Descuento = (Subtotal * 20) / 100
             Total = Subtotal - Descuento
 
             Console.WriteLine("Subtotal: " & Subtotal)
@@ -64,7 +64,6 @@ Module Venta
         Else
             Console.WriteLine("GRATIS")
         End If
-
 
     End Sub
 End Module
