@@ -7,7 +7,7 @@ Imports System
 
 Module NombreMes
 
-    Enum meses
+    Enum Meses
         Enero = 1
         Febrero
         Marzo
@@ -28,30 +28,30 @@ Module NombreMes
         Console.WriteLine("Ingrese el numero del mes")
         mesingresado = Console.ReadLine()
         Select Case mesingresado
-            Case meses.Enero
-                Console.WriteLine("El numero de mes ingresado es: {0} y corresponde al mes de {1} ", mesingresado, meses.Enero)
-            Case meses.Febrero
-                Console.WriteLine("El numero de mes ingresado es: {0} y corresponde al mes de {1} ", mesingresado, meses.Febrero)
-            Case meses.Marzo
-                Console.WriteLine("El numero de mes ingresado es: {0} y corresponde al mes de {1} ", mesingresado, meses.Marzo)
-            Case meses.Abril
-                Console.WriteLine("El numero de mes ingresado es: {0} y corresponde al mes de {1} ", mesingresado, meses.Abril)
-            Case meses.Mayo
-                Console.WriteLine("El numero de mes ingresado es: {0} y corresponde al mes de {1} ", mesingresado, meses.Mayo)
-            Case meses.Junio
-                Console.WriteLine("El numero de mes ingresado es: {0} y corresponde al mes de {1} ", mesingresado, meses.Junio)
-            Case meses.Julio
-                Console.WriteLine("El numero de mes ingresado es: {0} y corresponde al mes de {1} ", mesingresado, meses.Julio)
-            Case meses.Agosto
-                Console.WriteLine("El numero de mes ingresado es: {0} y corresponde al mes de {1} ", mesingresado, meses.Agosto)
-            Case meses.Septiembre
-                Console.WriteLine("El numero de mes ingresado es: {0} y corresponde al mes de {1} ", mesingresado, meses.Septiembre)
-            Case meses.Octubre
-                Console.WriteLine("El numero de mes ingresado es: {0} y corresponde al mes de {1} ", mesingresado, meses.Octubre)
-            Case meses.Noviembre
-                Console.WriteLine("El numero de mes ingresado es: {0} y corresponde al mes de {1} ", mesingresado, meses.Noviembre)
-            Case meses.Diciembre
-                Console.WriteLine("El numero de mes ingresado es: {0} y corresponde al mes de {1} ", mesingresado, meses.Diciembre)
+            Case Meses.Enero
+                Console.WriteLine("El numero de mes ingresado es: {0} y corresponde al mes de {1} ", mesingresado, Meses.Enero)
+            Case Meses.Febrero
+                Console.WriteLine("El numero de mes ingresado es: {0} y corresponde al mes de {1} ", mesingresado, Meses.Febrero)
+            Case Meses.Marzo
+                Console.WriteLine("El numero de mes ingresado es: {0} y corresponde al mes de {1} ", mesingresado, Meses.Marzo)
+            Case Meses.Abril
+                Console.WriteLine("El numero de mes ingresado es: {0} y corresponde al mes de {1} ", mesingresado, Meses.Abril)
+            Case Meses.Mayo
+                Console.WriteLine("El numero de mes ingresado es: {0} y corresponde al mes de {1} ", mesingresado, Meses.Mayo)
+            Case Meses.Junio
+                Console.WriteLine("El numero de mes ingresado es: {0} y corresponde al mes de {1} ", mesingresado, Meses.Junio)
+            Case Meses.Julio
+                Console.WriteLine("El numero de mes ingresado es: {0} y corresponde al mes de {1} ", mesingresado, Meses.Julio)
+            Case Meses.Agosto
+                Console.WriteLine("El numero de mes ingresado es: {0} y corresponde al mes de {1} ", mesingresado, Meses.Agosto)
+            Case Meses.Septiembre
+                Console.WriteLine("El numero de mes ingresado es: {0} y corresponde al mes de {1} ", mesingresado, Meses.Septiembre)
+            Case Meses.Octubre
+                Console.WriteLine("El numero de mes ingresado es: {0} y corresponde al mes de {1} ", mesingresado, Meses.Octubre)
+            Case Meses.Noviembre
+                Console.WriteLine("El numero de mes ingresado es: {0} y corresponde al mes de {1} ", mesingresado, Meses.Noviembre)
+            Case Meses.Diciembre
+                Console.WriteLine("El numero de mes ingresado es: {0} y corresponde al mes de {1} ", mesingresado, Meses.Diciembre)
             Case Else
                 Console.WriteLine("No existe tal numero de MES")
 
